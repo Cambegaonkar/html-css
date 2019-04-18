@@ -1,0 +1,211 @@
+*{
+    padding: 0px;margin: 0px;
+}
+
+body{
+    text-align: center;
+    text-decoration-color: #804000;
+    text-decoration-skip: edges;
+    font-family: cursive, inherit;
+    font-size: 1em;
+    background-color: #ffddcc;
+    padding: 0px;
+}
+
+header {
+  border-right: 0px;
+  border-left: 0px;
+  }
+
+h1{
+	text-align: center;
+	text-decoration: underline;
+}
+
+img{float: center;}
+
+p{
+    text-align: right;
+    margin-right: 115px;
+    margin-top: 30px;
+}
+
+wrapper{
+    
+    text-align: center;
+}
+
+.ref{
+    text-align: center;
+    padding: 70px;
+    margin-top: -100px;
+}
+
+.reference{
+    text-align: left;
+    padding: 50px;
+}
+
+.topbar
+{
+    margin-top:-30px;
+    height: 35px;
+    background-color: #804000;
+    color: white;
+    text-align: left;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 40px 40px;
+    text-decoration: none;
+    font-size: 17px;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-left: 0px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+	text-align: center;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #804000;
+    color: white;
+	text-align: center;
+}
+
+h2{
+	text-align: center;
+	text-decoration-color: #000000;
+	text-decoration-style: solid;
+}
+
+h3{
+	text-align:center;
+	text-decoration-color: #000000;
+}
+
+h4{
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-decoration-line: none;
+}
+
+h5{
+	font-style: normal;
+	text-decoration: none;
+	text-align: left;
+	text-decoration-line: none;
+}
+
+.test{
+    padding: 50px;
+    text-align: left;
+}
+
+.test dd{
+    padding-bottom: 30px;
+}
+
+c{
+    float: left;
+	font-size: 1em;
+}
+
+logo{
+	text-align: center;
+	padding: 10px 10px;
+}
+
+footer
+        {
+            background-color: #8c8c8c;
+            color:#333333;
+            font-size: 1em;
+            font-style: italic;
+            text-align: center;
+        }
+
+/*
+Generic Styling, for Desktops/Laptops
+*/
+table {
+width: 70%;
+height: 70%;
+margin: auto;
+border-collapse: collapse;
+font-size: 1em;
+}
+/* Zebra striping */
+tr:nth-of-type(odd) {
+background: #eee;
+font-size: 1em;
+}
+th {
+background: #333;
+color: white;
+font-weight: bold;
+}
+td, th {
+padding: 6px;
+border: 1px solid #ccc;
+text-align: left;
+font-size: 1em;
+}
+
+
+@media only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px) {
+/* Force table to not be like tables anymore */
+table, thead, tbody, th, td, tr {
+display: block;
+}
+/* Hide table headers (but not display: none;, for accessibility) */
+thead tr {
+position: absolute;
+top: -9999px;
+left: -9999px;
+font-size: 0.6em;
+}
+tr { border: 1px solid #ccc; }
+td {
+/* Behave like a "row" */
+border: none;
+border-bottom: 1px solid #eee;
+position: relative;
+padding-left: 50%;
+}
+td:before {
+/* Now like a table header */
+position: absolute;
+/* Top/left values mimic padding */
+top: 6px;
+left: 6px;
+width: 45%;
+padding-right: 10px;
+white-space: nowrap;
+font-size: 0.9em;
+}
+/* Label the data */
+td:nth-of-type(1):before { content: "Name"; }
+td:nth-of-type(2):before { content: "Description"; }
+td:nth-of-type(3):before { content: "Image"; }
+td:nth-of-type(3):before { content: "Price"; }
+}
